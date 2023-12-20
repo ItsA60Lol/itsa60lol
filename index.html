@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Text</title>
+    <title>Discord Information</title>
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
         }
@@ -16,10 +17,19 @@
         input {
             padding: 10px;
             font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <input type="text" id="editabletext" value="Disc: Aceluvsu / gg/altshop / ID: 931929875374297089!">
+    <input type="text" value="Current Discord: Aceluvsu" readonly>
+    <input type="text" value="Current ID: 931929875374297089" readonly>
+    <button onclick="window.location.href='https://discord.gg/altshop'">Discord Link</button>
 </body>
 </html>
